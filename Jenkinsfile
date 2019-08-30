@@ -8,9 +8,7 @@ podTemplate(label: label, cloud: 'kubernetes',
     volumes: [
         hostPathVolume(mountPath: '/var/run/docker.sock', hostPath: '/var/run/docker.sock'),
         hostPathVolume(mountPath: '/mongod', hostPath: '/data/cache/mongod'),
-        hostPathVolume(mountPath: '/root/.npm/node-sass/4.11.0/linux-x64-64_binding.node', hostPath: '/data/cache/binding.node.4.11.0'),
-        hostPathVolume(mountPath: '/root/.npm/node-sass/4.12.0/linux-x64-64_binding.node', hostPath: '/data/cache/binding.node.4.12.0'),
-        hostPathVolume(mountPath: '/tmp/cache', hostPath: '/tmp/cache/wt-rd-pipeline'),
+        hostPathVolume(mountPath: '/tmp/cache', hostPath: '/tmp/cache'),
         hostPathVolume(mountPath: '/root/.ssh', hostPath: '/root/.ssh')
     ]
 ) {

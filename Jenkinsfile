@@ -1,5 +1,6 @@
 def label = "worker-${UUID.randomUUID().toString()}"
 
+
 podTemplate(label: label, cloud: 'kubernetes',
     containers: [
         containerTemplate(name: 'node', image: 'worktile/dind-helm-k8s-mongod:1.0.0', ttyEnabled: true, command: 'cat'),
@@ -15,6 +16,8 @@ podTemplate(label: label, cloud: 'kubernetes',
     node(label) {
         def scmVars = checkout scm
         def branch = scmVars.GIT_BRANCH
+
+
         
         stage('Using Worktile Pipeline') {
             script {

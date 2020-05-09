@@ -13,6 +13,7 @@ podTemplate(label: label, cloud: 'kubernetes',
     ]
 ) {
     node(label) {
+        
         def scmVars = checkout scm
         def branch = scmVars.GIT_BRANCH
         stage('Using Worktile Pipeline') {

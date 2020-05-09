@@ -12,6 +12,7 @@ podTemplate(label: label, cloud: 'kubernetes',
         hostPathVolume(mountPath: '/root/.ssh', hostPath: '/root/.ssh')
     ]
 ) {
+    
     node(label) {
         def scmVars = checkout scm
         def branch = scmVars.GIT_BRANCH

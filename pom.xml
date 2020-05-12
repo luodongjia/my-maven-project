@@ -7,7 +7,8 @@
   <version>1.0-SNAPSHOT</version>
   <name>my-app</name>
   <url>http://maven.apache.org</url>
-   <reporting>
+  <url>https://github.com/luodongjia/my-maven-project.git</url>
+  <reporting>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -31,4 +32,11 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+   <developers>
+    <developer>
+      <id>LDJ</id>
+      <name>luodongjia</name>
+      <email>15632872339@163.com</email>
+    </developer>
+  </developers>
 </project>

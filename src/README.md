@@ -1,5 +1,5 @@
 [[test-plugin]]
-= Test Plugin
+= Test Plugin for Worktile
 :toc: macro
 
 [[Introduction]]

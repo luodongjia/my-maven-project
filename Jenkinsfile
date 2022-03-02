@@ -19,7 +19,6 @@ podTemplate(label: label, cloud: 'kubernetes',
             script {
                 container("wtctl") {
                     sh "wtctl"
-                    
                 }
             }
         }
